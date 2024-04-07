@@ -1,0 +1,381 @@
+body {
+  font-family: "Montserrat";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+h1 {
+  line-height: 3.5rem;
+  font-weight: 900;
+}
+
+p {
+  color: #c60d54;
+}
+
+/* Containers Section */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Title Section */
+
+#title {
+  /* animation-name: topac; */
+  /* animation-duration: 4s; */
+  /* background-image: linear-gradient(to right, #ff4c68, #fdd300); */
+  /* -webkit-mask-image: linear-gradient(
+    to right,
+    #ff4c68,
+    #fdd300,
+    90deg,
+    transparent
+  );
+  mask-image: linear-gradient(to right, #ff4c68, #fdd300, 90deg, transparent); */
+}
+
+/* @keyframes topac {
+  0% {
+    background-color: #ff4c68;
+  }
+  25% {
+    background-color: #ff6600;
+  }
+  50% {
+    background-color: #0000ff50;
+  }
+  100% {
+    background-color: green;
+  }
+} */
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* gradient background */
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* gradient background */
+
+.fa-color {
+  color: #ef8172;
+}
+
+.fa-color:hover {
+  color: #ff4c68;
+}
+
+/* Nav */
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+
+/* Nav */
+
+/* DL Buttons */
+
+.download-button {
+  border-radius: 0 0 0 0;
+  margin: 5% 3% 5% 0;
+}
+/* DL Buttons */
+
+.big-heading {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.section-heading {
+  color: #ef8172;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.title-image {
+  transform: rotate(25deg);
+  width: 18%;
+  position: absolute;
+  right: 25%;
+}
+
+@media (max-width: 1024px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    width: 60%;
+  }
+}
+
+/* Features */
+
+#features {
+  padding: 7% 15%;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Features */
+
+#testimonials {
+  background-color: #ef8172;
+  color: #fff;
+  position: relative; /* added */
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.testimonial-image {
+  width: 10%;
+  margin: 20px;
+  border-radius: 100%;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+#press {
+  position: relative; /* added */
+  background-color: #ef8172;
+}
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.slide-track {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  overflow: hidden;
+}
+
+.slider {
+  padding: 6em 2em;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translatex(-1000%);
+  }
+}
+
+.slide-img {
+  width: 15%;
+  height: 15%;
+  animation: scroll 60s linear infinite;
+}
+
+#pricing {
+  background-color: #fff;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.card:hover {
+  color: #fff;
+  background-color: #ff9cb8;
+  border-style: solid 1px;
+  box-shadow: 5px 5px red;
+  transition: 0.5s;
+}
+
+.card p:hover {
+  color: #fff;
+}
+
+.header-action {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: 900;
+}
+
+.foot {
+  color: #000000;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.foot > .ico:hover {
+  color: #ff4c68;
+}
+
+/* Go To Top  */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ff4c68;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  /* opacity: 0.5; */
+}
+
+#myBtn:hover {
+  background-color: #0a3e2e;
+}
+/*  */
+
+.l-border {
+  border-radius: 0 0 0 0;
+}
+
+.b-less-card {
+  border-radius: 0 0 0 0;
+  transition: 0.5s;
+}
+
+#validationCustom01 {
+  border-radius: 0 0 0 0;
+}
+#validationCustom02 {
+  border-radius: 0 0 0 0;
+}
+#validationCustom03 {
+  border-radius: 0 0 0 0;
+}
+#exampleFormControlTextarea1 {
+  border-radius: 0 0 0 0;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  display: inline-flex;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  color: black;
+}
+
+.flip-box-back {
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+}
+.features {
+  color: #ff4c68;
+}
+
+.gallery {
+  color: #ff4c68;
+}
+
+#contact {
+  background-color: #ef8172;
+}
